@@ -1,4 +1,4 @@
-[submodule "dist/dist"]
-	path = dist/dist
+[submodule "dist"]
+	path = dist
 	url = git@github.com:ShahzarMazhar/restaurant-page.git
 	branch = deploy
