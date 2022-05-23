@@ -1,0 +1,4 @@
+[submodule "restaurant-page"]
+	path = restaurant-page
+	url = git@github.com:ShahzarMazhar/restaurant-page.git
+	branch = deploy
