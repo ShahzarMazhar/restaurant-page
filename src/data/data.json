@@ -1,0 +1,19 @@
+{
+	"brandName": "Mazhar Iced",
+	"menuItems": [
+		["Home"],
+		["Menu"],
+		["About"],
+		["Contact"]
+	],
+	"welcome": {
+		"heading": "Amazing Tasty Ice Cream for You",
+		"text": "Integer nec solicitude nisi. Sed erat sem, vestibule ut sodalist sed, varies eu nullo. Aeneas ex ex, biennium non enid a, gravid portal ex.",
+		"btn_primary": "Order Now",
+		"btn": "learn more",
+        "image": {
+            "filename": "brooke-lark-8beTH4VkhLI-unsplash.jpg",
+            "credit": "https://unsplash.com/es/@brookelark?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" 
+        }
+	}
+}
