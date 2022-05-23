@@ -10,14 +10,14 @@ module.exports = merge(common, {
   entry: path.join(__dirname, 'src', 'index'),
   output: {
     filename: "bundle-[contenthash].js",
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'dist/dist'),
     clean: true,
   },
   plugins: [
     new MiniCssExtractPlugin({
       linkType: "text/css",
       filename: "bundle-[contenthash].css",
-}),
+    }),
   ],
   module: {
     rules: [
