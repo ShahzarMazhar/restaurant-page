@@ -3,7 +3,6 @@
  * Responsibility: Creating and appending home page in content placeholder
  */
 
-import { $, activeNavLink } from "./components/navbar";
 import { createWelcome } from "./components/hero";
 import {
   brandName,
