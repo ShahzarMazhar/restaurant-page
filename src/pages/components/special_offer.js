@@ -2,8 +2,8 @@ import {
   setTextContent,
   createElementsByClassName,
   bulkAppend,
-} from "./basics";
-import images from "./images";
+} from "../../modules/basics";
+import images from "../../modules/images";
 
 /*  
 <section class="offer container-md">
