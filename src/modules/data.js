@@ -55,5 +55,6 @@ const products = data.products;
 const menuItems = [];
 const offerItem = addImage(data.offerItem);
 const welcomeItems = addImage(data.welcomeItems);
+const pageHeaderImage = products[2].image;
 
-export { brandName, menuItems, setMenu, welcomeItems, products, offerItem };
+export { brandName, menuItems, setMenu, welcomeItems, products, offerItem, pageHeaderImage };

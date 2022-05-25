@@ -5,13 +5,14 @@
 
 import { setMenu } from "../modules/data";
 import render from "../modules/render-content";
+import { pageHeader } from "./components/page-header";
 
 const page = "Menu";
 
 const loadPage = (() => {
-  // const offer = createSpecialOffer(offerItem);
+  const header = pageHeader(page);
 
-  const nodes = [];
+  const nodes = [header];
   return () => render(page, nodes);
 })();
 

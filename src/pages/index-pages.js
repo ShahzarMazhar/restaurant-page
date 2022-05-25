@@ -6,4 +6,8 @@ import "./home";
 import "./menu";
 import "./about";
 import "./contact";
-import "../temp/test";
+
+
+
+// page just for testing purposes
+// import "../temp/test";
