@@ -15,12 +15,12 @@
   "products": [
     {
       "id": "1",
-      "image": "brooke-lark-8beTH4VkhLI-unsplash.jpg",
+      "filename": "brooke-lark-8beTH4VkhLI-unsplash.jpg",
       "image_credit": "https://unsplash.com/es/@brookelark?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
     },
     {
       "id": "2",
-      "image": "jason-richard-PnIHvHZsH4Q-unsplash.jpg",
+      "filename": "jason-richard-PnIHvHZsH4Q-unsplash.jpg",
       "image_credit": "https://unsplash.com/@jasonthedesigner?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
     }
   ]

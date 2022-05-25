@@ -1,13 +1,19 @@
-import  {$,  activeNavLink } from "./components/navbar";
+/*
+ * Module: Menu Page
+ * Responsibility: Creating and appending menu page in content placeholder
+ */
+
 import { setMenu } from "../modules/data";
+import render from "../modules/render-content";
+
+const page = "Menu";
+
+const loadPage = (() => {
+  // const offer = createSpecialOffer(offerItem);
+
+  const nodes = [];
+  return () => render(page, nodes);
+})();
 
 // link page to the menu
-setMenu('Menu', loadMenu);
-
-function loadMenu(){
-    const contentPlaceHolder = $('main.main');
-    activeNavLink('page-menu');
-    contentPlaceHolder.innerHTML = '';
-}
-
-export { loadMenu };
+setMenu(page, loadPage);

@@ -1,3 +1,8 @@
+/*
+ * Module: Home Page
+ * Responsibility: Creating and appending home page in content placeholder
+ */
+
 import { $, activeNavLink } from "./components/navbar";
 import { createWelcome } from "./components/hero";
 import {
@@ -7,22 +12,18 @@ import {
   offerItem
 } from "../modules/data";
 import { createSpecialOffer } from "./components/special_offer";
+import render from "../modules/render-content";
 
-setMenu("Home", loadHome);
+const page = "Home"
 
-function createHome() {
+const loadPage = (() => {
   const welcome = createWelcome(brandName, welcomeItems);
   const offer = createSpecialOffer(offerItem);
+  
+  
+  const nodes = [welcome, offer]
+  return () => render(page, nodes);
+})();
 
-  return [welcome, offer];
-}
-
-function loadHome() {
-  const contentPlaceHolder = $("main.main");
-  activeNavLink("page-home");
-
-  contentPlaceHolder.innerHTML = "";
-  contentPlaceHolder.append(...createHome());
-}
-
-export { loadHome };
+// link page to the menu
+setMenu(page, loadPage);

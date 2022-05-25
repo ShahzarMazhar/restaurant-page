@@ -1,3 +1,8 @@
+/*
+ * Module: Body Component
+ * Responsibility: This component module is for appending navbar on page and making placeholder for content
+ */
+
 import { brandName, menuItems } from "../../modules/data";
 import { $, createElementsByClassName } from "../../modules/basics";
 import { createNavbar } from "./navbar";

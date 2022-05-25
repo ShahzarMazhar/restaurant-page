@@ -1,41 +1,13 @@
+/*
+ * Module: Special Offer Component
+ * Responsibility: This component module is for creating navbar and activating links on it, when called
+ */
+
 import {
   setTextContent,
   createElementsByClassName,
   bulkAppend,
 } from "../../modules/basics";
-import images from "../../modules/images";
-
-/*  
-<section class="offer container-md">
-<div class="row align-items-center justify-content-center text-center">
-  <p class="text-secondary">Offer</p>
-  <h3 class="text-primary">Special Offer For You</h3>
-</div>
-<div class="row align-items-center">
-  <div class="offer-img col-lg-7">
-    <img
-      src="https://via.placeholder.com/1080x720"
-      class="img-fluid"
-      alt=""
-    />
-  </div>
-  <div class="offer-card col-lg-4 col-10 bg-primary p-3">
-      <div class="border-dashed border p-3 text-light">
-        <h3>Cherry Vanilla Ice Cream</h3>
-        <h5>Get 40% Offer</h5>
-        <p class="lead fs-6">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-          beatae necessitatibus sint pariatur voluptatum similique, ullam
-          iure quidem, accusantium
-        </p>
-        <button class="btn btn-secondary text-light" type="button">
-          Order Now
-        </button>
-      </div>
-  </div>
-</div>
-</section>
-*/
 
 function createSpecialOffer(item) {
   const [
@@ -69,7 +41,7 @@ function createSpecialOffer(item) {
   const img = new Image(1080, 720);
   img.className = "img-fluid";
   img.setAttribute("alt", "Offer Image");
-  img.src = images[item.image];
+  img.src = item.image;
 
   setTextContent(
     [head_text, "Offer"],

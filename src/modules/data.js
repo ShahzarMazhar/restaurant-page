@@ -1,15 +1,20 @@
 /*
-    This module imports data and images object, data manipulation and export for further use
-*/
+ * Module: Data Management
+ * Responsibility: Manage data i.e BrandName, Images, products etc
+ */
 
 import data from "../data/data.json";
-import images from "./images";
 
-const products = data.products;
-const brandName = "Mazhar Iced";
-const menuItems = [];
-const welcomeItems = addImage(data.welcomeItems);
-const offerItem = addImage(data.offerItem);
+(() => {
+  const r = require.context("../assets/images", false, /\.(png|jpe?g|svg)$/);
+  const images = {};
+  r.keys().map((item) => {
+    images[item.replace("./", "")] = r(item);
+  });
+  data.products.forEach((product) => {
+    product.image = images[product.filename];
+  });
+})();
 
 class MenuItem {
   constructor(name, func) {
@@ -45,4 +50,10 @@ function setMenu(name, func) {
   menuItems.push(new MenuItem(name, func));
 }
 
-export { brandName, menuItems, setMenu, welcomeItems, images, offerItem };
+const brandName = "Mazhar Iced";
+const products = data.products;
+const menuItems = [];
+const offerItem = addImage(data.offerItem);
+const welcomeItems = addImage(data.welcomeItems);
+
+export { brandName, menuItems, setMenu, welcomeItems, products, offerItem };

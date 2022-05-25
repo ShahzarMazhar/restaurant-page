@@ -1,7 +1,7 @@
 /*
-    This module manages the click event on main menu
-*/
-
+ * Module: Tabs Management
+ * Responsibility: Manage the click event on main menu
+ */
 
 import { menuItems } from "./data";
 

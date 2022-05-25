@@ -1,6 +1,7 @@
 /*
-    This module mostly interact with DOM
-*/
+ * Module: Basic functions
+ * Responsibility: Document Object Manipulation
+ */
 
 function $_(selector, context) {
     return (context || document).querySelectorAll(selector);
