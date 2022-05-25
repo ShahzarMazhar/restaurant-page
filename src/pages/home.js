@@ -6,7 +6,7 @@ import {
   welcomeItems,
   offerItem
 } from "../modules/data";
-import { createSpecialOffer } from "../temp/special_offer";
+import { createSpecialOffer } from "./components/special_offer";
 
 setMenu("Home", loadHome);
 
