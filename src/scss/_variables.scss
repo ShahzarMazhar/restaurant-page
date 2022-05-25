@@ -1,3 +1,23 @@
-$primary: #53a1b8;
+$prefix: "sz-";
+$primary: #49bef2;
+$secondary: #f06292;
 $headings-font-family: 'Lobster Two', cursive;
 $font-weight-base: 600;
+$font-size-base: 1.1rem;
+// $enable-rounded : false;
+$navbar-toggler-border-radius: .375rem !important;
+$btn-border-radius: none;
+$btn-border-radius-sm: $btn-border-radius;
+$btn-border-radius-lg: $btn-border-radius;
+/*
+$enable-gradients: true;
+$enable-shadows: true;
+
+$offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+
+// Customize some defaults
+$body-color: #333;
+$body-bg: #fff;
+$border-radius: .4rem;
+$success: #7952b3;
+*/

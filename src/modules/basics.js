@@ -61,8 +61,14 @@ function bulkAppend(parent, ...children){
 
 }
 
+function setTextContent(...pairsOfElementText) {
+    pairsOfElementText.forEach(item => {
+        item[0].textContent = item[1];
+    });
+}
+
 function random(max=Number, min=0){
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-export {$, $_, createElements, addAttribute, addAttributes, createElementsByClassName, bulkAppend, random};
+export {$, $_, createElements, addAttribute, addAttributes, createElementsByClassName, bulkAppend, setTextContent, random};

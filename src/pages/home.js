@@ -1,18 +1,28 @@
-import  {$, activeNavLink } from "./components/navbar";
+import { $, activeNavLink } from "./components/navbar";
 import { createWelcome } from "./components/hero";
-import { data } from "../modules/data";
+import {
+  brandName,
+  setMenu,
+  welcomeItems,
+  offerItem
+} from "../modules/data";
+import { createSpecialOffer } from "../temp/special_offer";
 
-function createHome(){
-    const welcome = createWelcome(data.brandName, data.welcome);
-    return welcome;
+setMenu("Home", loadHome);
+
+function createHome() {
+  const welcome = createWelcome(brandName, welcomeItems);
+  const offer = createSpecialOffer(offerItem);
+
+  return [welcome, offer];
 }
 
-function loadHome(){
-    const contentPlaceHolder = $('main.main');
-    activeNavLink('#link-home');
+function loadHome() {
+  const contentPlaceHolder = $("main.main");
+  activeNavLink("page-home");
 
-    contentPlaceHolder.innerHTML = '';
-    contentPlaceHolder.appendChild(createHome());
+  contentPlaceHolder.innerHTML = "";
+  contentPlaceHolder.append(...createHome());
 }
 
 export { loadHome };

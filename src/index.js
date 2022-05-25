@@ -1,7 +1,9 @@
-import './scss/style.scss';
-import 'bootstrap';
-import { loadBody } from './pages/components/body';
-import { changeTab } from './modules/tabs-management';
+import "./scss/index.scss";
+import "bootstrap";
+import { loadBody } from "./pages/components/body";
+import { changeTab } from "./modules/tabs-management";
+import "./pages/index-pages";
+
 
 loadBody();
-changeTab('link-home');
+changeTab("page-home");

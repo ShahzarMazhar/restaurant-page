@@ -1,0 +1,23 @@
+.offer {
+  .offer-card {
+    transform: translateY(-10%);
+    margin: auto;
+  }
+  .border {
+    border: 2px dashed !important;
+  }
+  @include media-breakpoint-up(lg) {
+    .offer-img {
+      transform: translateX(10%);
+    }
+    .offer-card {
+      transform: translateX(-10%);
+      margin: inherit;
+    }
+  }
+}
+.btn-link {
+  &:hover {
+    color: hsl(340, 100%, 75%) !important;
+  }
+}

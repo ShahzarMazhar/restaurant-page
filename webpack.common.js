@@ -6,7 +6,7 @@ module.exports = {
   entry: path.join(__dirname, 'src', 'index'),
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.template.html',
+      template: './src/pages/index.template.html',
       title: 'Restaurant Page | A Odin Project',
     })
   ],

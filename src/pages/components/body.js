@@ -1,19 +1,17 @@
-import { data } from "../../modules/data";
+import { brandName, menuItems } from "../../modules/data";
 import { $, createElementsByClassName } from "../../modules/basics";
 import { createNavbar } from "./navbar";
 
+function loadBody() {
+  const container = $("#container");
 
-function loadBody(){
+  const navbar = createNavbar(brandName, ...menuItems);
+  const contentPlaceHolder = createElementsByClassName([
+    "main",
+    "main ",
+  ]);
 
-    const container = $('#container');
-    
-    const navbar    = createNavbar(
-        data.brandName,
-        ...data.menuItems
-        );
-    const contentPlaceHolder = createElementsByClassName(['main', 'main container col-xxl-10'])
-        
-    container.append(navbar, contentPlaceHolder);
+  container.append(navbar, contentPlaceHolder);
 }
 
 export { loadBody };

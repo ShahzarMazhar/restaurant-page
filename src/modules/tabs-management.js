@@ -2,26 +2,20 @@
     This module manages the click event on main menu
 */
 
-import { loadHome } from "../pages/home";
-import { loadMenu } from "../pages/menu";
-import { loadAbout } from "../pages/about";
-import { loadContact } from "../pages/contact";
+
+import { menuItems } from "./data";
 
 
-function changeTab(id){
-    switch(id){
-        case 'link-home'    : loadHome(); break;
-        case 'link-menu'    : loadMenu(); break;
-        case 'link-about'   : loadAbout(); break;
-        case 'link-contact' : loadContact(); break;
-        default: console.log('no page configured');
-    };
+function changeTab(target){
+    menuItems.forEach(item => {
+        const error = `target is not set for ${item.name}`;
+        (item.id == target) ? (item.target) ? item.target() : console.error(error) : "";
+    });
 }
 
-function changeTabEvent(event){
+function tabChangeEvent(event){
     event.preventDefault();
-    changeTab(event.target.id);
-    // throw new Event('tabChanged', event.target.id);
+    changeTab(event.target.getAttribute('data-target'));
 }
 
-export {changeTab, changeTabEvent };
+export {changeTab, tabChangeEvent };
