@@ -15,18 +15,39 @@
   "products": [
     {
       "id": "1",
+      "name": "Cone Ice Cream",
       "filename": "brooke-lark-8beTH4VkhLI-unsplash.jpg",
       "image_credit": "https://unsplash.com/es/@brookelark?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
     },
     {
       "id": "2",
+      "name": "Pistachios Vanilla Ice Cream Bowl",
       "filename": "jason-richard-PnIHvHZsH4Q-unsplash.jpg",
       "image_credit": "https://unsplash.com/@jasonthedesigner?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
     },
     {
       "id": "3",
+      "name": "Choco Taco Ice Cream",
       "filename": "bryn-beatson-YIrLhY5qsQE-unsplash.jpg",
       "image_credit": "https://unsplash.com/es/@brynbeatson?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+    },
+    {
+      "id": "4",
+      "name": "Butterscotch Ice Cream",
+      "filename": "ishan-seefromthesky-NhJX41giJFs-unsplash.jpg",
+      "image_credit": "https://unsplash.com/@seefromthesky?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+    },
+    {
+      "id": "5",
+      "name": "Mango Cup Ice Cream",
+      "filename": "prchi-palwe-qGHw7ffz8JE-unsplash.jpg",
+      "image_credit": "https://unsplash.com/@prachipalwe?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+    },
+    {
+      "id": "6",
+      "name": "Chocolate Cup Ice Cream",
+      "filename": "vd-photography-GfwnPS3TTss-unsplash.jpg",
+      "image_credit": "https://unsplash.com/@vdphotography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
     }
   ]
 }

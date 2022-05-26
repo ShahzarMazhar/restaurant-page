@@ -24,7 +24,7 @@ function createSpecialOffer(item) {
     card_text,
     card_btn,
   ] = createElementsByClassName(
-    ["section", "offer container-md mt-5"],
+    ["section", "offer container-md my-5"],
     ["div", "row align-items-center justify-content-center text-center"],
     ["p", "text-secondary"],
     ["h3", "text-primary"],

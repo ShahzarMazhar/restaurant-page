@@ -38,6 +38,60 @@
   }
 }
 
+.menu{
+  @extend .about;
+  
+  .card{
+    min-width: 400px;
+    width: 100%;
+    max-width: 700px;
+    border-left: 5px solid $primary !important;
+    position: relative;
+    transition: 0.3s ease-in;
+    &::before{
+        content: "";
+        position: absolute;
+        width: 20px;
+        background: $primary;
+        clip-path: polygon(0 0,0% 100%,100% 50%);
+        left: -3px;
+        top: 30px;
+        bottom: 30px;
+    }
+    img{
+      object-fit: cover;
+    }
+    .info{
+      border-right: 3px dashed $primary;
+      transition: 0.3s;
+    }
+    .card-image{
+      background: $light;
+      transition: 0.3s;
+    }
+    &:hover{
+      transform: scale(1.05);
+      z-index: 1;
+
+      .card-image{
+        transform: scale(2);
+      }
+      .info{
+        padding-left: 55px;
+      }
+    }
+  }
+  @include media-breakpoint-up(lg) {
+
+    .card{
+      width: 45%;
+    }
+  }
+.card-image{
+  border: 2px dashed $primary;
+}
+}
+
 /*
 
 

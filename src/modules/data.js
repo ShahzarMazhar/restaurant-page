@@ -4,6 +4,7 @@
  */
 
 import data from "../data/data.json";
+import { random } from "./basics";
 
 (() => {
   const r = require.context("../assets/images", false, /\.(png|jpe?g|svg)$/);
@@ -12,7 +13,7 @@ import data from "../data/data.json";
     images[item.replace("./", "")] = r(item);
   });
   data.products.forEach((product) => {
-    product.image = images[product.filename];
+    product.image = (images[product.filename]) ? images[product.filename] :  console.error(`${product.filename} Not Found`);
   });
 })();
 
@@ -50,8 +51,18 @@ function setMenu(name, func) {
   menuItems.push(new MenuItem(name, func));
 }
 
+function addPrice(items) {
+
+  //adding prince randomly
+  items.forEach(item => {
+    item.price = random(9999) / 100;
+  });
+
+  return items
+}
+
 const brandName = "Mazhar Iced";
-const products = data.products;
+const products = addPrice(data.products);
 const menuItems = [];
 const offerItem = addImage(data.offerItem);
 const welcomeItems = addImage(data.welcomeItems);
