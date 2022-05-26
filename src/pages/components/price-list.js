@@ -1,3 +1,8 @@
+/*
+ * Module: Price List Component
+ * Responsibility: This component module is for creating price list, when called
+ */
+
 import {
   createElementsByClassName,
   bulkAppend,

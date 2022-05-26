@@ -1,3 +1,8 @@
+/*
+ * Module: Page Footer Component
+ * Responsibility: This component module is for creating footer
+ */
+
 import { bulkAppend, createElementsByClassName } from "../../modules/basics";
 
 const createFooter = () => {
