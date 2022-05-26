@@ -41,7 +41,7 @@ function createSpecialOffer(item) {
   const img = new Image(1080, 720);
   img.className = "img-fluid";
   img.setAttribute("alt", "Offer Image");
-  img.src = item.image;
+  img.src = item.image.default;
 
   setTextContent(
     [head_text, "Offer"],

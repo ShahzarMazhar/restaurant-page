@@ -38,7 +38,7 @@ function pageHeader(item, heading_text) {
   });
 
   a.addEventListener("click", tabChangeEvent);
-  container.style.backgroundImage = `url(${pageHeaderImage})`;
+  container.style.backgroundImage = `url(${pageHeaderImage.default})`;
 
   setTextContent(
     [heading, heading_text || item],

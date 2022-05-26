@@ -37,7 +37,7 @@ function createWelcome(brandName, welcome) {
   img.className = "d-block mx-lg-auto img-fluid";
   img.setAttribute("alt", "Cover Image");
   img.setAttribute("loading", "lazy");
-  img.src = welcome.image;
+  img.src = welcome.image.default;
 
   sub_heading.textContent = `Welcome to ${brandName}`;
   heading.textContent = welcome.heading;

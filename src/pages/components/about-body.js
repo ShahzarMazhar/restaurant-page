@@ -53,7 +53,7 @@ function createAboutBody(item) {
   const img = new Image(1080, 720);
   img.className = "img-fluid";
   img.setAttribute("alt", "Offer Image");
-  img.src = item.image;
+  img.src = item.image.default;
 
   setTextContent(
     [card_heading, "Mazhar Iced Is The Best Place For Tasty Ice Cream"],
@@ -62,7 +62,7 @@ function createAboutBody(item) {
     [card_btn, "Discover More"]
   );
 
-  container.style.backgroundImage = `url(${pageHeaderImage})`
+  container.style.backgroundImage = `url(${pageHeaderImage.default})`
 
   bulkAppend(
     container,[body,

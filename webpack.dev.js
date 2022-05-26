@@ -44,9 +44,11 @@ module.exports = merge(common, {
           {
             // Loads a SASS/SCSS file and compiles it to CSS
             loader: 'sass-loader'
-          }
+          },
+          
         ]
-      }
+      },
+
       // {
       //   test: /\.scss$/i,
       //   use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader']

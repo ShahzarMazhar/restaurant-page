@@ -22,7 +22,7 @@ function createPriceList(products) {
 
   setTextContent([heading, `Let's Check Our Menu`], [sub_heading, "Our Menu"]);
 
-  container.style.backgroundImage = `url(${pageHeaderImage})`;
+  container.style.backgroundImage = `url(${pageHeaderImage.default})`;
 
   products.forEach((product) => {
     const [card, card_body, image_place, info, title, description, price] =
@@ -38,7 +38,7 @@ function createPriceList(products) {
 
     const img = new Image(75, 75);
 
-    addAttributes(img, { src: product.image, class: "rounded-circle m-1" });
+    addAttributes(img, { src: product.image.w200, class: "rounded-circle m-1" });
 
     setTextContent(
       [title, product.name],

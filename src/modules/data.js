@@ -12,8 +12,16 @@ import { random } from "./basics";
   r.keys().map((item) => {
     images[item.replace("./", "")] = r(item);
   });
+
   data.products.forEach((product) => {
-    product.image = (images[product.filename]) ? images[product.filename] :  console.error(`${product.filename} Not Found`);
+    const imagesArray = (images[product.filename]) ? images[product.filename].default.split(" ") :  console.error(`${product.filename} Not Found`);
+    const Count = imagesArray.length;
+    product.image = {default: imagesArray[Count-1]}
+
+    for (let i = 0; i < imagesArray.length - 1; i = i+2) {
+      const imageName = imagesArray[i+1].replace('w,', "");
+      product.image[`w${imageName}`] = imagesArray[i]
+    }
   });
 })();
 

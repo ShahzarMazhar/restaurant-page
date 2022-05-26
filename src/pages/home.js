@@ -14,6 +14,7 @@ import {
 import { createSpecialOffer } from "./components/special_offer";
 import render from "../modules/render-content";
 import createPriceList from "./components/price-list";
+import { createAboutBody } from "./components/about-body";
 
 const page = "Home"
 
