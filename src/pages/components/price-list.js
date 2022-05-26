@@ -6,45 +6,23 @@ import {
 } from "../../modules/basics";
 import { pageHeaderImage } from "../../modules/data";
 
-
 function createPriceList(products) {
-  /*
-  # container fluid
-    > header
-      > sub heading
-      > heading
-    > body
-
-    ---- loop
-      > card
-        :before
-        > card Body
-          > image place
-            :before
-            > image
-          > product
-            > title
-            > description
-          > price
-            :before
-  
-  */
   const [container, content, header, sub_heading, heading, body] =
     createElementsByClassName(
       ["section", "menu container_fluid "],
-      ['div', 'd-flex flex-column bg-light bg-opacity-75 pt-5 align-item-center justify-content-center'],
+      [
+        "div",
+        "d-flex flex-column bg-light bg-opacity-75 pt-5 align-item-center justify-content-center",
+      ],
       ["div", "row text-center w-100"],
       ["p", "text-secondary fs-5"],
       ["h3", "text-primary h2"],
       ["div", "d-flex body flex-wrap justify-content-center py-2 gap-3"]
     );
 
-    setTextContent(
-      [heading, `Let's Check Our Menu`],
-      [sub_heading, 'Our Menu']
-    )
+  setTextContent([heading, `Let's Check Our Menu`], [sub_heading, "Our Menu"]);
 
-    container.style.backgroundImage = `url(${pageHeaderImage})`
+  container.style.backgroundImage = `url(${pageHeaderImage})`;
 
   products.forEach((product) => {
     const [card, card_body, image_place, info, title, description, price] =
@@ -80,8 +58,6 @@ function createPriceList(products) {
   });
 
   bulkAppend(container, [content, [header, [sub_heading], [heading]], [body]]);
-
-  console.log(container);
   return container;
 }
 
