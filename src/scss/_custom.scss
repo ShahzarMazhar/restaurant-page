@@ -91,8 +91,36 @@
   border: 2px dashed $primary;
 }
 }
+html {
+  min-height: 100%;
+}
+body {
+  margin-bottom: 60px;
+}
+.footer{
+  height: 60px;
+  line-height: 60px;
+
+  a{
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+    transition: 0.3s ease;
+    &:hover{
+      transform: scale(1.5) translateY(-20%);
+    }
+  }
+
+}
+
 
 /*
+
+url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2' fill='#{$form-check-input-checked-color}'/></svg>")
+
 
 
 */
