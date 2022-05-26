@@ -11,4 +11,4 @@ import "./pages/index-pages";
 
 
 loadBody();
-changeTab("page-contact");
+changeTab("page-home");
