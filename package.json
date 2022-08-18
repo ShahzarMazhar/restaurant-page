@@ -8,6 +8,10 @@
     "dev": "webpack server --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/szmazhr/restaurant-page"
+  },
   "author": "Shahzar Mazhar",
   "license": "ISC",
   "devDependencies": {
